@@ -1,15 +1,15 @@
 package com.epam.task.model;
 
+import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Data
 @ToString
-@NoArgsConstructor
-public class Notification {
-
-    private String userName;
+@Builder
+public class Status {
+    
+    private int code;
     private String message;
 
 }
